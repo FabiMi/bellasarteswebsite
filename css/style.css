@@ -1,0 +1,920 @@
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes&display=auto');
+
+* {
+  --primary-1: 230, 15%, 22%;
+  /* Neutral */
+  --primary-2: 230, 15%, 20%;
+  /* Dark */
+  --primary-3: 230, 15%, 18%;
+  /* Darker */
+  --primary-4: 230, 15%, 45%;
+  /* Lightest */
+  --secondary: 166, 69%, 81%;
+  /* Splash of Color */
+  --transition: cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: none !important;
+}
+
+/* Header/ Generell */
+#headerContainer {
+  text-align: center;
+  justify-content: center;
+}
+
+#closedCortain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  background-color: black;
+  z-index: 999;
+  justify-content: center;
+
+}
+
+#openCortain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  background-color: black;
+  visibility: hidden;
+
+
+}
+
+#slogan {
+  text-align: center;
+  color: white;
+  font-size: 70px;
+  font-family: "Great Vibes", Gadget, sans-serif;
+  margin-top: 500px;
+}
+
+
+
+#branding {
+  background-color: rgb(171, 83, 77);
+}
+
+
+#backgroundImg1 {
+
+  background-image: url("../img/bellas-artes-16.jpg");
+  height: 700px;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+
+/*content*/
+
+
+
+.firstPart {
+  height: 700px;
+  background-image: url("../img/UNADJUSTEDNONRAW_thumb_1218.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.secondPart {
+  background-image: url("../img/UNADJUSTEDNONRAW_thumb_1218.jpg");
+  height: 700px;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+
+}
+
+.thirdPart {
+
+  position: absolute;
+  height: 700px;
+  top: 1400px;
+  background-image: url("../img/UNADJUSTEDNONRAW_thumb_1218.jpg");
+  height: 700px;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+#bellasIntro {
+  position: absolute;
+  top: 700px;
+  background-color: rgb(171, 83, 77);
+  z-index: 99;
+  width: 100%;
+  height: 200px;
+  color: white;
+}
+
+
+#bellasIntro2 {
+  position: absolute;
+  top: 1600px;
+  background-color: rgb(171, 83, 77);
+  z-index: 98;
+  width: 100%;
+  height: 25%
+}
+
+#bellasIntro3 {
+  position: absolute;
+  top: 2100px;
+  background-color: rgb(171, 83, 77);
+  z-index: 98;
+  width: 100%;
+  height: 25%;
+
+}
+
+
+
+
+/* content ends here*/
+
+/* Buttom Menu starts here*/
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:700');
+
+:root {
+  --dark: #333;
+  --light: #fff;
+  --neutral: #f6f6f6;
+  --neutral-dark: #d1d1d1;
+  --color: #5607d7;
+  --color-light: #941ed2;
+  --color-dark: #2719cd;
+  --font-stack: 'Josefin Sans', 'Montserrat', 'sans-serif';
+}
+
+.heroWrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menuButton {
+  --x: -50%;
+  --y: 0;
+  --z: 0;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  --shadow: 286, 24%, 14%;
+  position: fixed;
+  color: hsl(var(--secondary));
+  background: hsl(var(--primary-1));
+  border: 1px solid hsl(var(--primary-2));
+  box-shadow:
+    1px 1px 1px hsla(var(--shadow), .12),
+    3px 3px 3px hsla(var(--shadow), .11),
+    5px 5px 5px hsla(var(--shadow), .1),
+    7px 7px 7px hsla(var(--shadow), .09),
+    11px 11px 11px hsla(var(--shadow), .08),
+    13px 13px 13px hsla(var(--shadow), .07),
+    17px 17px 17px hsla(var(--shadow), .06),
+    19px 19px 19px hsla(var(--shadow), .05),
+    23px 23px 23px hsla(var(--shadow), .04),
+    29px 29px 29px hsla(var(--shadow), .03);
+  border-radius: 4px;
+  user-select: none;
+  font-size: 16px;
+  white-space: nowrap;
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translate3d(var(--x), var(--y), var(--z));
+  cursor: pointer;
+  z-index: 106;
+  transition: 0.15s cubic-bezier(0.33, 1, 0.53, 1);
+}
+
+.menuButtonHidden {
+  --y: 200%;
+}
+
+.menuButtonVisible {
+
+  --y: 0;
+}
+
+.menuButton div {
+  display: flex;
+  align-items: center;
+  width: 12px;
+  height: 12px;
+  margin-right: 20px;
+}
+
+.menuButton div div {
+  display: table;
+  height: 1px;
+  background: var(--light);
+  box-shadow: 0 4px 0 var(--light), 0 -4px 0 var(--light);
+}
+
+
+@media only screen and (min-width: 601px) {
+
+  .menuButton {
+    opacity: 0;
+    z-index: -3;
+  }
+
+}
+
+.buttomMenuLinks {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  overflow: scroll;
+  left: 0;
+}
+
+.menuOverlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  z-index: 100;
+}
+
+.menuBody, #reservationTool {
+  --x: 0;
+  --y: 0;
+  --z: 0;
+  display: block;
+  width: 100%;
+  background: var(--dark);
+  padding-bottom: 15px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 0px -9px 50px -30px black;
+  font-family: 'Montserrat', sans-serif;
+  position: fixed;
+  bottom: 0;
+  z-index: 105;
+  transform: translate3d(var(--x), var(--y), var(--z));
+  transition: 0.2s cubic-bezier(0.33, 1, 0.53, 1);
+}
+
+
+
+.reservationToolIsHidden{
+  bottom: -100px !important;
+  opacity: 0;
+  transition: 1s;
+} 
+
+#reservationTool{
+  position: fixed;
+  bottom: 240px !important;
+  height: 600px;
+  justify-content: center;
+  text-align: center;
+  top: 0;
+}
+
+.reserveToolButton{
+text-align: center;
+}
+
+
+
+.menuBody[hidden] {
+  --y: 150%;
+  opacity: 0;
+  z-index: -3;
+  color: var(--light)
+}
+
+.menuBody>*:not(:last-child) {
+  border-bottom: 2px solid var(--neutral);
+}
+
+.menuHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  color: var(--light)
+}
+
+.menuHeader .menuLink div {
+  width: 15px;
+  height: 15px;
+  border: 2px solid var(--dark);
+  border-radius: 50%;
+  position: relative;
+  transform: rotate(5.5rad);
+  color: var(--light)
+}
+
+.menuHeader .menuLink div:after {
+  content: '';
+  width: 2px;
+  height: 10px;
+  background: var(--light);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.menuHeader p {
+  font-size: 18px;
+  font-weight: bold;
+  vertical-align: center;
+  white-space: nowrap;
+}
+
+.menuHeader h3 {
+  font-weight: normal;
+}
+
+.menuHeader button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  background: var(--neutral-dark);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.menuHeader button div {
+  width: 15px;
+  height: 3px;
+  background: var(--dark);
+  position: relative;
+  transform: rotate(5.5rad);
+}
+
+.menuHeader button div:before {
+  content: '';
+  width: 3px;
+  height: 15px;
+  background: var(--light);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menuLinks {
+  display: flex;
+  padding: 0 15px;
+  font-weight: bold;
+  overflow-x: auto;
+  color: var(--light);
+}
+
+.menuLinks a {
+  flex: 1 1 1px;
+  padding: 10px 8px;
+  color: var(--light);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.menuContact {
+  display: flex;
+  padding: 8px;
+}
+
+.menuContact svg {
+  width: 100%;
+  fill: var(--color);
+}
+
+.menuContact a {
+  flex: 1 1 30%;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 8px;
+  background: var(--neutral);
+  color: var(--color);
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* Buttom Menu ends here*/
+
+/* Nav starts here*/
+
+.nav {
+  --shadow: 286, 24%, 14%;
+  position: fixed;
+  padding: .2rem;
+  background: hsl(var(--primary-1));
+  border: 1px solid hsl(var(--primary-2));
+  box-shadow:
+    1px 1px 1px hsla(var(--shadow), .12),
+    3px 3px 3px hsla(var(--shadow), .11),
+    5px 5px 5px hsla(var(--shadow), .1),
+    7px 7px 7px hsla(var(--shadow), .09),
+    11px 11px 11px hsla(var(--shadow), .08),
+    13px 13px 13px hsla(var(--shadow), .07),
+    17px 17px 17px hsla(var(--shadow), .06),
+    19px 19px 19px hsla(var(--shadow), .05),
+    23px 23px 23px hsla(var(--shadow), .04),
+    29px 29px 29px hsla(var(--shadow), .03);
+  border-radius: 4px;
+  user-select: none;
+  left: 5%;
+  top: 20px;
+  width: 90%;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 100;
+}
+
+.isHidden {
+  top: -100px;
+  opacity: 0;
+  transition: 1s;
+}
+
+.isVisible {
+  opacity: 1;
+  transition: 1s;
+}
+
+.menuLink {
+  padding: .8rem 1.4rem;
+  color: #5C617B;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Poppins', 'Helvetica', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  border: none;
+  border-radius: 2px;
+  background: none;
+  transition: all .4s var(--transition);
+  cursor: pointer;
+  position: relative;
+  box-sizing: border-box;
+}
+
+span {
+  margin-right: .1rem;
+}
+
+span svg {
+  height: 16px;
+  width: 16px;
+}
+
+.menuLink:before {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 0;
+  top: 20%;
+  left: 50%;
+  background: hsla(var(--secondary), .35);
+  border-radius: 2px;
+  transition: all .25s var(--transition);
+}
+
+.menuLink:hover:before {
+  width: 80%;
+  left: 10%;
+  border-top: 1px solid hsl(var(--secondary));
+}
+
+input:checked+.menuLink:before {
+  height: 60%;
+  bottom: 20%;
+}
+
+input:checked+.menuLink {
+  color: hsl(var(--secondary));
+  transition-delay: .1s;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+/* Nav ends here*/
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .nav {
+    opacity: 0;
+    z-index: -3;
+  }
+}
+
+/* Carousel starts here*/
+
+.carousel-item{
+ top:0 
+
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+
+  background-color: #333 !important;
+  opacity: 0.5;
+  z-index: 999;
+  height: 700px !important;
+
+}
+
+.carousel-inner {
+  height: 700px;
+  width: 75%;
+  ;
+
+}
+
+#carouselContainer,
+.carousel-slide {
+  position: relative;
+  left: 0;
+  z-index: 105;
+  object-fit: fill;
+  max-width: 100%;
+}
+
+
+
+.container {
+  padding-top: 0;
+  width: 100% !important;
+  height: 700px !important;
+  position: absolute;
+  display: center;
+  padding-left: 0;
+}
+
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+
+    max-width: 100% !important;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm {
+
+    max-width: 100% !important;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .container,
+  .container-md,
+  .container-sm {
+
+    max-width: 100% !important;
+  }
+}
+
+@media (min-width: 576px) {
+
+  .container,
+  .container-sm {
+    max-width: 100% !important;
+    box-sizing: border-box;
+  }
+}
+
+
+/* Carousel ends here*/
+
+
+/* The FoodGridSection starts here*/
+
+
+
+#foodGridSection {
+  position: relative;
+  top: 210px;
+  z-index: 100;
+  width: 100%;
+}
+
+
+#foodGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 20px;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  left: 0;
+
+}
+
+.foodGridItem {
+  border: 1px solid var(--dark);
+  z-index: 1200x;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+
+/* The FoodGridSection ends here*/
+
+
+/* Footer starts here*/
+/* Footer ends here*/
+
+
+/*<------- Impressum starts here ------->*/
+
+
+#impressumWrapper {
+  position: absolute;
+
+  z-index: 40;
+  width: 100%;
+  height: 1600px;
+  background-color: rgb(171, 83, 77);
+  color: white;
+  text-align: center;
+  box-sizing: border-box;
+  opacity: 0.7;
+}
+
+
+#impressumContent{
+  margin-top: 200px;
+}
+
+#impList{
+  margin-top: 50px;
+  position: relative;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Arial Black", Gadget, sans-serif;
+  opacity: 1 !important;
+}
+
+#backgroundImgImpressum{
+  
+  background-image: url("../img/53DDA0BD-99CD-4EC4-AF7B-1798B9F58AF3.jpg");
+  min-height: 1600px;
+  width: auto;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -50;
+  
+}
+
+
+/*<------- Impressum ends here ------->*/
+
+/*<----- input field starts here ----->*/
+input{
+all: unset;
+}
+
+label{
+  all: unset;
+  }
+
+.formGroup {
+  position: relative;
+  padding: 15px 0 0;
+  width: 80%;
+  justify-content: center ;
+  left: 10%;
+}
+.formField {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.formField::placeholder {
+  color: transparent;
+}
+.formField:placeholder-shown ~ .formLabel {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+.formLabel {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #9b9b9b;
+}
+.formField:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #a71f1f, #ef6f38);
+  border-image-slice: 1;
+}
+.formField:focus ~ .formLabel {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: rgb(171, 83, 77);
+  font-weight: 700;
+}
+/* reset input */
+.formField:required, .formField:invalid {
+  box-shadow: none;
+}
+
+.zoomImg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 9999;
+  justify-content: center;
+}
+
+  #closeResButton button {
+  width: 15px;
+  height: 3px;
+  background: white;
+  position: relative;
+  top: 10px;
+  right: 10px;
+  }
+
+
+  /*<----- input field ends here ----->*/
+
+
+  /*<----- Reservation Tool starts here ----->*/
+/*<--------- the Menue Section Starts here ----->*/
+
+#menueGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  position: relative;
+  width: 100%;
+  height: 500px;
+  box-sizing: border-box;
+  left: 0;
+ 
+
+}
+
+
+.menueGridItem{
+  z-index: 1200x;
+  width: auto;
+  background-color: rgb(171, 83, 77);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.menueGridItem img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.devider{
+  height: 200px;
+  width: 100%;
+  background-color: rgb(171, 83, 77);
+}
+/*<--------- the Menue Section ends here ----->*/
+
+/*<--------- the Blog Section Starts here ----->*/
+
+#blogGrid{
+ display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  left: 0;
+}
+
+.blogGridItem{
+  z-index: 1200x;
+ max-width: 100%;
+  height: 300px;
+  background-color: rgb(171, 83, 77);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+ object-fit: fill;
+  margin: 0;
+}
+
+
+.focusPimientos{
+object-position: -150px 95px;
+object-fit: fill;
+height: 150%;
+width: 150%;
+transition: 3.5s;
+}
+
+.focusCalamaris{
+    object-position: 150px -125px;
+    object-fit: fill;
+    height: 150%;
+    width: 160%;
+    }
+
+    #playMenue{
+      width: 100%;
+      height: 100%;
+      display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  position: absolute;
+    }
+
+   #quesoFrito{
+    grid-area: 6 / 1 / 25 / 13;
+   }
+
+  #playContainer{
+   position: relative;
+   height: 100%;
+   width: 100%;
+
+
+  }
+/*<--------- the Blog Section ends here ----->*/
