@@ -267,7 +267,8 @@ body {
   z-index: 100;
 }
 
-.menuBody, #reservationTool {
+.menuBody,
+#reservationTool {
   --x: 0;
   --y: 0;
   --z: 0;
@@ -288,13 +289,13 @@ body {
 
 
 
-.reservationToolIsHidden{
+.reservationToolIsHidden {
   bottom: -100px !important;
   opacity: 0;
   transition: 1s;
-} 
+}
 
-#reservationTool{
+#reservationTool {
   position: fixed;
   bottom: 240px !important;
   height: 600px;
@@ -303,8 +304,8 @@ body {
   top: 0;
 }
 
-.reserveToolButton{
-text-align: center;
+.reserveToolButton {
+  text-align: center;
 }
 
 
@@ -550,9 +551,8 @@ input[type="checkbox"] {
 
 /* Carousel starts here*/
 
-.carousel-item{
- top:0 
-
+.carousel-item {
+  top: 0
 }
 
 .carousel-control-prev,
@@ -593,6 +593,7 @@ input[type="checkbox"] {
 }
 
 @media (min-width: 1200px) {
+
   .container,
   .container-lg,
   .container-md,
@@ -699,11 +700,11 @@ img {
 }
 
 
-#impressumContent{
+#impressumContent {
   margin-top: 200px;
 }
 
-#impList{
+#impList {
   margin-top: 50px;
   position: relative;
   list-style-type: none;
@@ -713,8 +714,8 @@ img {
   opacity: 1 !important;
 }
 
-#backgroundImgImpressum{
-  
+#backgroundImgImpressum {
+
   background-image: url("../img/53DDA0BD-99CD-4EC4-AF7B-1798B9F58AF3.jpg");
   min-height: 1600px;
   width: auto;
@@ -723,28 +724,29 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -50;
-  
+
 }
 
 
 /*<------- Impressum ends here ------->*/
 
 /*<----- input field starts here ----->*/
-input{
-all: unset;
+input {
+  all: unset;
 }
 
-label{
+label {
   all: unset;
-  }
+}
 
 .formGroup {
   position: relative;
   padding: 15px 0 0;
   width: 80%;
-  justify-content: center ;
+  justify-content: center;
   left: 10%;
 }
+
 .formField {
   font-family: inherit;
   width: 100%;
@@ -756,14 +758,17 @@ label{
   background: transparent;
   transition: border-color 0.2s;
 }
+
 .formField::placeholder {
   color: transparent;
 }
-.formField:placeholder-shown ~ .formLabel {
+
+.formField:placeholder-shown~.formLabel {
   font-size: 1.3rem;
   cursor: text;
   top: 20px;
 }
+
 .formLabel {
   position: absolute;
   top: 0;
@@ -772,6 +777,7 @@ label{
   font-size: 1rem;
   color: #9b9b9b;
 }
+
 .formField:focus {
   padding-bottom: 6px;
   font-weight: 700;
@@ -779,7 +785,8 @@ label{
   border-image: linear-gradient(to right, #a71f1f, #ef6f38);
   border-image-slice: 1;
 }
-.formField:focus ~ .formLabel {
+
+.formField:focus~.formLabel {
   position: absolute;
   top: 0;
   display: block;
@@ -788,12 +795,14 @@ label{
   color: rgb(171, 83, 77);
   font-weight: 700;
 }
+
 /* reset input */
-.formField:required, .formField:invalid {
+.formField:required,
+.formField:invalid {
   box-shadow: none;
 }
 
-.zoomImg{
+.zoomImg {
   position: fixed;
   top: 0;
   left: 0;
@@ -804,23 +813,23 @@ label{
   justify-content: center;
 }
 
-  #closeResButton button {
+#closeResButton button {
   width: 15px;
   height: 3px;
   background: white;
   position: relative;
   top: 10px;
   right: 10px;
-  }
+}
 
 
-  /*<----- input field ends here ----->*/
+/*<----- input field ends here ----->*/
 
 
-  /*<----- Reservation Tool starts here ----->*/
+/*<----- Reservation Tool starts here ----->*/
 /*<--------- the Menue Section Starts here ----->*/
 
-#menueGrid{
+#menueGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -829,12 +838,12 @@ label{
   height: 500px;
   box-sizing: border-box;
   left: 0;
- 
+
 
 }
 
 
-.menueGridItem{
+.menueGridItem {
   z-index: 1200x;
   width: auto;
   background-color: rgb(171, 83, 77);
@@ -843,24 +852,25 @@ label{
   align-items: center;
 }
 
-.menueGridItem img{
+.menueGridItem img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
 }
 
-.devider{
+.devider {
   height: 200px;
   width: 100%;
   background-color: rgb(171, 83, 77);
 }
+
 /*<--------- the Menue Section ends here ----->*/
 
 /*<--------- the Blog Section Starts here ----->*/
 
-#blogGrid{
- display: grid;
+#blogGrid {
+  display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   position: relative;
@@ -869,52 +879,116 @@ label{
   left: 0;
 }
 
-.blogGridItem{
+.blogGridItem {
   z-index: 1200x;
- max-width: 100%;
+  max-width: 100%;
   height: 300px;
   background-color: rgb(171, 83, 77);
   text-align: center;
   justify-content: center;
   align-items: center;
- object-fit: fill;
+  object-fit: fill;
   margin: 0;
 }
 
 
-.focusPimientos{
-object-position: -150px 95px;
-object-fit: fill;
-height: 150%;
-width: 150%;
-transition: 3.5s;
+.focusPimientos {
+  object-position: -150px 95px;
+  object-fit: fill;
+  height: 150%;
+  width: 150%;
+  transition: 3.5s;
 }
 
-.focusCalamaris{
-    object-position: 150px -125px;
-    object-fit: fill;
-    height: 150%;
-    width: 160%;
-    }
+.focusCalamaris {
+  object-position: 150px -125px;
+  object-fit: fill;
+  height: 150%;
+  width: 160%;
+}
 
-    #playMenue{
-      width: 100%;
-      height: 100%;
-      display: grid;
+#playMenue {
+  width: 100%;
+  height: 100%;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   position: absolute;
-    }
+}
 
-   #quesoFrito{
-    grid-area: 6 / 1 / 25 / 13;
-   }
+#quesoFrito {
+  grid-area: 6 / 1 / 25 / 13;
+}
 
-  #playContainer{
-   position: relative;
-   height: 100%;
-   width: 100%;
+#playContainer {
+  position: relative;
+  height: 100%;
+  width: 100%;
 
 
-  }
+}
+
 /*<--------- the Blog Section ends here ----->*/
+
+/*<--------- the Reservation/Contact Section Starts here ----->*/
+
+
+#contactBackPic{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+}
+
+#contactBackground {
+  background-color: black;
+  width: 80%;
+  height: 300%;
+  position: absolute;
+  margin-left: 10%;
+  opacity: 0.7;
+}
+
+#contactContainer {
+  margin-top: 250px;
+  z-index: 99;
+
+}
+
+#contactPic {
+  position: relative;
+  width: 70%;
+ 
+  margin-left: 15%;
+  margin-top: 30px;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  z-index: 100;
+}
+
+#gMaps {
+  position: relative;
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 100px;
+  z-index: 100;
+}
+
+#contactFormWrapper{
+  width: 80%;
+  margin-left: 10%;
+}
+
+/*<--------- the Reservation/Contact Section ends here ----->*/
+/*<--------- the Events Section Starts here ----->*/
+
+#eventFormWrapper{
+  position: relative;
+  margin-top:200px;
+  background-color: black;
+}
