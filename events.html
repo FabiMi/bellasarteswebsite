@@ -16,10 +16,7 @@
 
 <header>
     <div class="headerContainer">
-      <div id="closedCortain">
-        <h1 id="slogan">El amor entra por la Cocina</h1>
-      </div>
-        <div id="backgroundImg1"  alt="backgroundGuestroom"></div>
+     <div id="backgroundImg1"  alt="backgroundGuestroom"></div>
             <div class="nav">
                 <input name="buttons" type="checkbox" id="cut" checked="checked">
                 <div class="menuLink" for="Über uns">
@@ -480,13 +477,33 @@
 
 
     <div id="bellasIntro">
-      <h1>Willkommen im Bellas Artes</h1>
+      <h1>Events im Bellas Artes</h1>
       <p>
-        Das Tapas-Restaurant in Berlin-Wilmersdorf - mit traditionell spanischer Küche
-        Lassen Sie sich umarmen von einem Stück Madrid mitten in Berlin. Tauchen Sie ein in eine Welt gemütlicher, spanischer Gastlichkeit.</p> 
-
+        Wir freuen uns Gastgeber für ihre Events und Gruppen zu sein. Sei es Geburtstage oder Firmenfeiern und Weihnachtsfeiern. Kontaktieren Sie uns dazu gerne.</p> 
       </header>
-      <main></main>
+      <main>
+        <div id="eventFormWrapper">
+          <form class="formGroup field">
+          <input type="input" id="name" class="formField" name="name" placeholder="Vorname" required /><br>
+          <label for="name" class="formLabel">Vorname</label><br>
+          </form>
+          <form class="formGroup field">
+          <input type="input" class="formField" id="lName" name="lName" placeholder="Nachname" /><br>
+          <label class="formLabel" for="lName">Nachname</label><br>
+          </form>
+          <form class="formGroup field">
+          <input class="formField" type="email" id="email" name="email" placeholder="Email"/><br><br>
+          <label class="formLabel" for="email">Email:</label><br>
+          </form>
+          <form class="formGroup field">
+            <textarea class="formField" id="message" name="message"  rows="4" cols="50" value="Wir möchten gerne ein Event bei euch veranstalten. Bitte bitte kontaktiert uns." ></textarea><br><br>
+            <label class="formLabel" for="message" >Wir möchten gerne ein Event bei euch veranstalten. Bitte bitte kontaktiert uns. </label><br>
+            </form>
+          <form class="formGroup field"></div>
+
+
+
+      </main>
       <footer></footer>
       <script src="js/index.js"></script>
       <script src="js/menu.js"></script> 
