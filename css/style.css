@@ -86,6 +86,8 @@ body {
 
 
 .firstPart {
+  margin-top: 200px;
+ 
   height: 700px;
   background-image: url("../img/UNADJUSTEDNONRAW_thumb_1218.jpg");
   background-attachment: fixed;
@@ -96,6 +98,7 @@ body {
 
 
 .secondPart {
+  margin-top: 200px;
   background-image: url("../img/UNADJUSTEDNONRAW_thumb_1218.jpg");
   height: 700px;
   width: 100%;
