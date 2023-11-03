@@ -26,7 +26,7 @@ export const FoodMainView = () => {
    return (
     <div>
         {foodItems.map((foodItem) => (
-            <FoodCard key={foodItem.id} price={foodItems.price}  foodItems={foodItem}  onFoodItemClick={(newSelectedFoodItem) => {
+            <FoodCard key={foodItem.id}  foodItems={foodItem}  onFoodItemClick={(newSelectedFoodItem) => {
                 setSelectedFoodItem(newSelectedFoodItem); }}/>
                
           )) }

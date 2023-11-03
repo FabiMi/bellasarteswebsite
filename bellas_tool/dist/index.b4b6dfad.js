@@ -27430,7 +27430,6 @@ const FoodMainView = ()=>{
     }, undefined);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: foodItems.map((foodItem)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _foodCard.FoodCard), {
-                price: foodItems.price,
                 foodItems: foodItem,
                 onFoodItemClick: (newSelectedFoodItem)=>{
                     setSelectedFoodItem(newSelectedFoodItem);
@@ -27469,11 +27468,15 @@ parcelHelpers.export(exports, "FoodCard", ()=>FoodCard);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 const FoodCard = (props)=>{
     // Access title and price from prop
-    const { foodItems, onFoodItemClick } = props;
+    const { price, foodItems, onFoodItemClick } = props;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         onClick: ()=>onFoodItemClick(foodItems),
-        children: foodItems.title
-    }, void 0, false, {
+        children: [
+            foodItems.title,
+            " ",
+            foodItems.price
+        ]
+    }, void 0, true, {
         fileName: "src/components/food-card/food-card.jsx",
         lineNumber: 4,
         columnNumber: 16
