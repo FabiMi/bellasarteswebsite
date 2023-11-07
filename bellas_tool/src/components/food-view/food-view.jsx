@@ -1,25 +1,10 @@
 
 
-export const FoodView = ({ foodItem }) => {
+export const FoodView = ({props}) => {
 
 
-    return (
-      <div>
-        <div>
-          <img src={foodItem.image} />
-        </div>
-        <div>
-          <span>Title: </span>
-          <span>{foodItem.title}</span>
-        </div>
-        <div>
-            <span>Description: </span>
-            <span>{foodItem.description}</span>
-        </div>
-        <div>
-          <span>Preis: </span>
-          <span>{foodItem.price}</span>
-        </div>
-      </div>
-    );
-  };
+  // Access title and price from prop
+  const { foodItems, onFoodItemClick } = props;
+  return <div onClick={() => onFoodItemClick(foodItems)}>{foodItems.title} <input placeholder={foodItems.price}></input></div>;
+          
+};

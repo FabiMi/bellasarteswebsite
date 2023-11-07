@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FoodCard } from "../food-card/food-card";
 import { FoodView } from "../food-view/food-view";
 
-export const FoodMainView = () => {
+export const MainFoodView = () => {
 
     const [foodItems, setFoodItems] = useState([
         { id: 1, title: "Patatas Bravas",image:
@@ -18,7 +18,7 @@ export const FoodMainView = () => {
    const [selectedFoodItem, setSelectedFoodItem] = useState(null);
 
    if  ( selectedFoodItem ) {
-    return ( <FoodView foodItem={selectedFoodItem} />);
+    return ( <FoodCard foodItem={selectedFoodItem} onBackClick={()=> setSelectedFoodItem(null)}/>);
 
    if (foodItems.length === 0) return <div>There are no food items.</div>;
    }
@@ -26,7 +26,7 @@ export const FoodMainView = () => {
    return (
     <div>
         {foodItems.map((foodItem) => (
-            <FoodCard key={foodItem.id}  foodItems={foodItem}  onFoodItemClick={(newSelectedFoodItem) => {
+            <FoodView key={foodItem.id}   foodItems={foodItem}  onFoodItemClick={(newSelectedFoodItem) => {
                 setSelectedFoodItem(newSelectedFoodItem); }}/>
                
           )) }

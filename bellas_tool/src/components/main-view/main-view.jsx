@@ -1,11 +1,13 @@
 import React from 'react';
-import { FoodMainView } from '../food-main-view/food-main-view';     
+import { MainFoodView } from '../main-food-view/main-food-view';     
+import { MainDrinksView } from '../main-drinks-view/main-drinks-view.jsx';
 
 export const MainView = () => {
   
 return (
     <div className="main-view">
-      <FoodMainView />
+      
+      <MainDrinksView />
     </div>
   );
 
